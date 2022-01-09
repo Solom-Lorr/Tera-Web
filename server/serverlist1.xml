@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<serverlist>
+  <server>
+    <id>1</id>
+    <ip>47.93.47.124</ip>
+    <port>7801</port>
+    <category sort="1"><![CDATA[<font color="#ffffff">综合服务器</font>]]></category>
+    <name raw_name=">TERA国服回归0522"><![CDATA[<font color="#ffffff">TERA国服回归0522</font><info icon="null", text="综合服务器" />]]></name>
+    <crowdness sort="1"><![CDATA[<font color="#ffffff">Normal</font>]]></crowdness>
+    <open sort="1">Yes</open>
+    <permission_mask>0x00000000</permission_mask>
+    <popup><![CDATA[【Unable to access the server at this time.]]></popup>
+  </server>
+</serverlist>

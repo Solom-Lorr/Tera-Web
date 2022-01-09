@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link rel="stylesheet" href="./css/core.css">
+<link rel="stylesheet" href="./css/ad.css">
+<script type="text/javascript" src="./js/jquery-latest.min.js"></script>
+<script src="./js/util.js"></script>
+<script src="./js/error_msg.js?v=3"></script>
+<script src="./js/functions_launcher.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 先取得必要的元素並用 jQuery 包裝
+	// 再來取得 $slides 的高度及設定動畫時間
+	var $block = $('#abgneBlock'),
+		$slides = $('#player ul.list', $block),
+		_height = 162,//$slides.find('li').height(),
+		$li = $('li', $slides),
+		_animateSpeed = 400, 
+		timer, _speed = 4000;
+ 
+	// 產生 li 選項
+	var _str = '';
+	for(var i=0, j=$li.length;i<j;i++){
+		// 每一個 li 都有自己的 className = playerControl_號碼
+		_str += '<li class="playerControl_' + (i+1) + '">' + (i+1) + '</li>';
+	}
+ 
+	// 產生 ul 並把 li 選項加到其中
+	// 並幫 li 加上 mouseover 事件
+	var $controlLi = $('<ul class="playerControl"></ul>').html(_str).appendTo($('#player', $block).parent()).find('li');
+	$controlLi.mouseover(function(){
+		clearTimeout(timer);
+ 
+		var $this = $(this);
+		$this.addClass('current').siblings('.current').removeClass('current');
+		// 移動位置到相對應的號碼
+		$slides.stop().animate({
+			top: _height * $this.index() * -1
+		}, _animateSpeed, function(){
+			if(!_isOver) timer = setTimeout(moveNext, _speed);
+		});
+ 
+		return false;
+	}).eq(0).mouseover();
+ 
+	// 當滑鼠移到 $block 時則停止輪播
+	// 移出時則繼續輪播
+	var _isOver = false;
+	$block.mouseenter(function(){
+		clearTimeout(timer);
+		_isOver = true;
+	}).mouseleave(function(){
+		_isOver = false;
+		timer = setTimeout(moveNext, _speed);
+	});
+ 
+	// 用來控制移動的函式
+	function moveNext(){
+		var _now = $controlLi.filter('.current').index();
+		$controlLi.eq((_now+1) % $controlLi.length).mouseover();
+	}
+});
+
+OTP_STATUS = '';
+ID = '';
+MODE = 'LIVE';
+VIP	= '';
+PASS = '';
+IP = 'public ip';
+
+var _gaq = _gaq || [];
+_gaq.push([ '_setAccount', 'UA-59571872-17' ]);
+_gaq.push([ '_trackPageview' ]);
+
+(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+			: 'http://www')
+			+ '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+})();
+
+function noEvent() {
+	if (event.keyCode == 116) {
+		event.keyCode = 2;
+		return false;
+	} else if (event.ctrlKey
+			&& (event.keyCode == 78 || event.keyCode == 82)) {
+		return false;
+	}
+}
+document.onkeydown = noEvent;
+</script>
+<style type="text/css">
+html {overflow: hidden;padding: 0; margin:0;}
+</style>
+</head>
+<body style="height:200px;" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+	<div class="wrap" style="display:none;height:200px;">
+	  <div class="header">
+	    <div class="logo"><a href="http://bbs.47.93.47.124" target="_blank"><img src="images/logo.png"></a></div>
+	    <!--/logo-->
+	    <div class="col">
+	      <ul class="ico-wrap">
+	        <li class="ico-fb"><a title="FaceBook" target="_blank" href="http://bbs.47.93.47.124">fb</a></li>
+	        <li class="ico-gamer"><a title="巴哈姆特" target="_blank" href="http://bbs.47.93.47.124">gamer</a></li>
+	        <li class="ico-vip vipMark" style="display:none;"><span>vip</span></li>
+	      </ul>
+	      <!--/ico-wrap-->
+	      <ul class="nav" style="clear: both;">
+	        <li class="nav-all"><a target="_blank" href="http://bbs.47.93.47.124">綜合消息</a></li>
+	        <li class="nav-guide"><a target="_blank" href="http://bbs.47.93.47.124">新手指南</a></li>
+	        <li class="nav-billing"><a target="_blank" href="http://bbs.47.93.47.124">儲值購點</a></li>
+	        <li class="nav-cs"><a target="_blank" href="http://bbs.47.93.47.124">客服中心</a></li>
+	      </ul>
+	      <!--/nav--> 
+	    </div>
+	    <!--/col-->
+	  </div>
+	  <!--/header-->
+	  <div class="content">
+	    <div class="notice">
+	      <h3>綜合消息</h3>
+	      <ul>
+	      	<li><a href="http://bbs.47.93.47.124" target="_blank"><span class="tit" style="float:left;"> 例行維護開機公告</span><span class="time">2020-04-16</span></a></li>
+	        <li><a href="http://bbs.47.93.47.124" target="_blank"><span class="tit" style="float:left;"> 覺醒吧!紅龍迪亞哥 釣魚大滿足系列活動</span><span class="time">2020-04-16</span></a></li>
+	        <li><a href="http://bbs.47.93.47.124" target="_blank"><span class="tit" style="float:left;"> 桃心領露肩時裝扭蛋</span><span class="time">2020-04-16</span></a></li>
+	        <li><a href="http://bbs.47.93.47.124" target="_blank"><span class="tit" style="float:left;"> 例行維護公告</span><span class="time">2020-04-15</span></a></li>
+	        </ul>
+	    </div>
+	    <!--/notice-->
+	    <div class="ad">
+	      <h3>最新活動</h3>
+	      <div id="abgneBlock">
+			<div id="player">
+				<ul class="list">
+					<li><a target="_blank" href="http://bbs.47.93.47.124"><img src="images/20200415/1586936353808.jpg" width="460" height="162"></a></li>
+						<li><a target="_blank" href="http://bbs.47.93.47.124"><img src="images/1586319549881.jpg" width="460" height="162"></a></li>
+						<li><a target="_blank" href="http://bbs.47.93.47.124"><img src="images/586242844367.jpg" width="460" height="162"></a></li>
+						<li><a target="_blank" href="http://bbs.47.93.47.124"><img src="images/1585207796289.jpg" width="460" height="162"></a></li>
+						<li><a target="_blank" href="http://bbs.47.93.47.124"><img src="images/1575944540867.jpg" width="460" height="162"></a></li>
+						</ul>
+			</div>
+		</div>
+	       </div>
+	    <!--/ad-->
+		    <div style="display: block;width:840px;">
+			    <div class="progress">
+			      <h3></h3>
+			      <div class="total">
+			        <div class="tit">total</div>
+			        <div class="progress-bar progressAll">
+			          <div class="progress-bar-complete" id="progressBar2" style=" width:30%;"></div>
+			          <span class="file-name" id="totalText"></span>
+			          </div>
+			      </div>
+			      <div class="now">
+			        <div class="tit">now</div>
+			        <div class="progress-bar progressNow">
+			          <div class="progress-bar-complete" id="progressBar1" style=" width:80%;"></div>
+			          <span class="file-name" id="fileName"></span>
+			          </div>
+			      </div>
+			    </div>
+			    <!--/progress--> 
+			    <div class="check">
+			      
+			    </div>
+			    <!--/check-->
+			    <div class="gamestart">
+			      <button class="btn-gamestart btn" id="playButton" onclick="OnButtonClick()">遊戲啟動</button>
+			    </div>
+			</div>
+	    <!--/gamestart-->
+	  </div>
+	  <!--/content-->
+	  <div class="footer">©HappyTuk Co., Ltd. & Bluehole INC. All Rights Reserved.</div>
+	  <!--/footer-->
+	  <button class="btn-close" onclick="javascript:SendCommand('command:close')">close</button>
+	</div>
+	<!--/wrap-->
+	<div id="loginScreen" class="modalScreen">
+		<iframe src="../tera/LauncherloginForm?id=&key=&permission=&charcountstr="
+			id="loginIFrame" name="loginIFrame">
+		</iframe>
+	</div>
+	<div id="otpScreen" class="modalScreen">
+		<iframe id="otpFrame" ></iframe>
+	</div>
+</body>
+</html>
