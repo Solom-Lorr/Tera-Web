@@ -68,7 +68,7 @@ ID = '';
 MODE = 'LIVE';
 VIP	= '';
 PASS = '';
-IP = '2.7.116.224';
+IP = '92.145.85.221';
 
 var _gaq = _gaq || [];
 _gaq.push([ '_setAccount', 'UA-59571872-17' ]);
