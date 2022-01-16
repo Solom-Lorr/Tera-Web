@@ -1,2 +1,5 @@
 
 *.7z
+.idea/modules.xml
+.idea/Tera-Web.iml
+.idea/vcs.xml
