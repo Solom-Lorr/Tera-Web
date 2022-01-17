@@ -46,11 +46,11 @@
 				//alert('getCharCnt()__success_ACCOUNT_NAME:'+ACCOUNT_NAME+'__CHARCOUNTSTR:'+CHARCOUNTSTR+'__PERMISSION:'+PERMISSION);
 			},
 			error:function(jqXHR, textStatus, errorThrown){
-			//alert(jqXHR.responseText);
-			//alert(jqXHR.url);
-			//alert(jqXHR.status);
-			//alert(jqXHR.readyState);
-			//alert(jqXHR.statusText);
+				alert(jqXHR.responseText);
+				alert(jqXHR.url);
+				alert(jqXHR.status);
+				alert(jqXHR.readyState);
+				alert(jqXHR.statusText);
 			}
 		});
 
