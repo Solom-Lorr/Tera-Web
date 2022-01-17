@@ -36,7 +36,7 @@
 	}
 	function getCharCnt() {
 		$.ajax({
-			url : 'http://92.145.85.221:8080/tera/GetAccountInfoByUserNo',
+			url : 'http://127.0.0.1:8080/tera/GetAccountInfoByUserNo',
 			method : 'post',
 			data : {id:ACCOUNT_NAME},
 			async: false,
@@ -81,7 +81,7 @@
 		jQuery.support.cors = true;
 		//window.alert($('#userloginForm').serialize()+'abcdef122222');
 		$.ajax({
-			url : 'http://92.145.85.221:8080/tera/LauncherLoginAction',
+			url : 'http://127.0.0.1:8080/tera/LauncherLoginAction',
 			method : 'post',
 			data : $('#userloginForm').serialize(),
 			success : function (data){
@@ -142,7 +142,7 @@
 	}
 </script>
 </head>
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" style="    overflow: hidden;">
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" style="overflow: hidden;">
 <div class="wrap">
   <form class="form-horizontal" name="form1"  method="post" action="/tera/LauncherLoginAction" id="userloginForm">
   	<input type="hidden" name="r" value="478c98a0b14387f3966ebeec6b570348fffac684b96f1d2e48d0caa51b4b4adb"/>
@@ -167,7 +167,7 @@
     <div class="form-group">
       <div class="col">
         <button type="button" onclick="DoLogin();" tabindex="3" class="btn-submit">login</button>
-        <a target="_blank" href="//92.145.85.221:81/reg/" class="btn-join">register</a> </div>
+        <a target="_blank" href="//127.0.0.1:81/reg/" class="btn-join">register</a> </div>
     </div>
     <div class="g-recaptcha" data-callback="DoLogin" data-sitekey="6LcZ2f0SAAAAAD0eUdEP0YdkRZLYrdf8rg2qjsdj" data-size="normal" data-theme="dark" style="display:none;margin:3px 0px 0px 73px;position: absolute;"></div>
   </form>

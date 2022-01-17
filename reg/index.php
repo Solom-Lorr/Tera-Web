@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,13 +6,10 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tera 注册</title>
+	<title>Tera Registration</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	
-
-  
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -28,14 +24,10 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/style.css">
-
-
 	<!-- Modernizr JS -->
 	<script src="./js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -45,7 +37,6 @@
 
 	</head>
 	<body>
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -54,11 +45,8 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
-					
-
 					<!-- Start Sign In Form -->
 					<form method='post' action='index_act.php' class="fh5co-form animate-box" >
 						<h2>Registration</h2>
@@ -80,25 +68,14 @@
 							<img  style="vertical-align:middle;" src="code.php" name="KeyImg" id="KeyImg"  onClick="document.getElementById('KeyImg').src='code.php?'+Math.random()">	
 						</div>
 
-						
-
-
-
-
-
 						<div class="form-group" style = "text-align:center;vertical-align:middle;" >
-						<input type="submit" value="提交" class="btn btn-primary" style = "font-size:20px;" >
+						<input type="submit" value="Register" class="btn btn-primary" style = "font-size:20px;" >
 						</div>
-
-
-
 					</form>
 					<!-- END Sign In Form -->
-
 				</div>
 			</div>
 		</div>
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- Bootstrap -->
@@ -109,8 +86,6 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-
-
 	</body>
 </html>
 
