@@ -4,7 +4,6 @@ var LAUNCHER_ERROR;
 
 function initErrorMsgArray()
 {
-	/*
 	PATCH_ERROR = new Array();
 	PATCH_ERROR['0'] = 'ERROR_NONE';
 	PATCH_ERROR['1'] = 'patcher is not initialized';
@@ -42,8 +41,8 @@ function initErrorMsgArray()
 	PATCH_REASON['13'] = 'invalid url';
 	PATCH_REASON['14'] = 'url not found';
 	PATCH_REASON['15'] = 'url busy';
-	*/
-	PATCH_ERROR = new Array();
+
+	/*PATCH_ERROR = new Array();
 	PATCH_ERROR['0'] = '未知的錯誤';
 	PATCH_ERROR['1'] = '更新檔無法初始化';
 	PATCH_ERROR['2'] = '無法開始更新';
@@ -129,7 +128,7 @@ function initErrorMsgArray()
 	LAUNCHER_ERROR['0x002x']='營運工具'; 			//운영툴		31~47
 	LAUNCHER_ERROR['0x010x']='伺服器無法連線';		//arg_gw	256~271
 	LAUNCHER_ERROR['0x011x']='launcher';		//launcher	272~287
-	LAUNCHER_ERROR['0x0109']='客戶端檔案已經損壞，請執行檔案檢查。';		//클라이언트 파일이 손상 되었습니다. 파일 검사를 실행해 주시기 바랍니다.
+	LAUNCHER_ERROR['0x0109']='客戶端檔案已經損壞，請執行檔案檢查。';		//클라이언트 파일이 손상 되었습니다. 파일 검사를 실행해 주시기 바랍니다.*/
 
 }
 
