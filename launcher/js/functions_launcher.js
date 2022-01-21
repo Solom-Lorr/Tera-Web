@@ -346,7 +346,7 @@ function l2w_openPopup(page_id) {
 }
 
 $(function() {
-    initErrorMsgArray(); 
+    initErrorMsgArray();
     if(ID == '')displayLoginIFrame(true);
     SendCommand('command:size|320,500');
     
