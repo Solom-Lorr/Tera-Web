@@ -50,7 +50,7 @@
 		$conn->close();
 		die("Connection failed: ");
 	}
-    $query="SELECT userName FROM accountinfo WHERE userName='test'";
+    $query="SELECT userName FROM accountinfo WHERE userName='$id'";
     $result = $conn->query($query);
 		
     if($result->num_rows > 0)
